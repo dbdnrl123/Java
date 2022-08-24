@@ -1,7 +1,7 @@
 package sbu1;
 
 /*
- * 날짜 : 2022/08/16
+ * 날짜 : 2022/08/16s
  * 이름 : 양재영
  * 내용 : Java 개발환경 구축 실습
  */
@@ -12,6 +12,7 @@ public class HelloWorld {
 		// 기본출력
 		System.out.println("Hello World!");
 		System.out.println("Hello Java!");
+		System.out.println("hello");
 		
 		// 한줄출력
 		System.out.print("Hello ");
@@ -22,3 +23,4 @@ public class HelloWorld {
 		System.out.println("Hello Busan!");
 	}
 }
+
