@@ -6,13 +6,14 @@ public class Car {
 	private String name;
 	private String color;
 	private int speed;
+	public static int count;
 	
 	//생성자
 	public Car(String name, String color, int speed) {
 		this.name = name;
 		this.color = color;
 		this.speed = speed;
-		
+		count++;
 	}
 	
 	// Getter, Setter
@@ -51,6 +52,7 @@ public class Car {
 		System.out.println("차량명 : "+ name);
 		System.out.println("차량색 : "+ color);
 		System.out.println("현재속도 : "+ speed);
+		System.out.println("현재차량수 : "+ count);
 	}
 	
 	
