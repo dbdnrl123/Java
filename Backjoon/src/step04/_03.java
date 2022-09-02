@@ -13,20 +13,27 @@ public class _03 {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		int arr[]= {sc.nextInt(), sc.nextInt(), sc.nextInt(), sc.nextInt(),
-				sc.nextInt(), sc.nextInt(), sc.nextInt(), sc.nextInt(),
-				sc.nextInt(), sc.nextInt()};
+		int arr[]= new int[10];
+		boolean bl;
+		int cnt = 0;
 		
-		int n = 0;
-		
-		for(int i=0; i<n; i++) {
-			int a=sc.nextInt();
+		for(int i=0; i<arr.length; i++) {
+			arr[i] = sc.nextInt() % 42;
 			
-			if(a%42!=0) {
-				System.out.println(arr[i]);
 			}
-				
+		for(int i=0; i<arr.length; i++) {
+			bl = false;
+			for(int k=i+1; k<arr.length; k++) {
+				if(arr[i] == arr[k]) {
+					bl = true;
+					break;
+				}
+			}
+			if(bl == false) {
+				cnt++;
+			}
 		}
+		System.out.println(cnt);
 	}
 
 }
